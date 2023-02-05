@@ -2,6 +2,8 @@
   --utama: #034b29;
   --kuning: #feda00;
   --second: #f2fcf7;
+  --abu: #b0aeae;
+  --hitam: #1d1c1c;
 }
 
 body {
@@ -94,19 +96,35 @@ body {
   margin-top: 1.3rem;
 }
 
+.mainbar,
+.sidebar {
+  padding: 0 1.5rem;
+}
+
+/* Carousel */
 #main-content .carousel {
   border-radius: 1.5rem;
   overflow: hidden;
+  height: 350px;
 }
 
+.carousel-item img {
+  height: 350px;
+}
+
+/* Devider Mainbar and siadebar */
 .devider {
   margin: 1.3rem 0;
+}
+
+.devider.dev-sidebar {
+  margin: 0;
 }
 
 .devider h3 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-style: italic;
   position: relative;
 }
@@ -126,6 +144,64 @@ body {
     rgba(3, 75, 41, 1) 12%,
     rgba(242, 252, 247, 1) 99%
   );
+}
+
+/* Berita pesantren */
+.box-segment {
+  padding: 0.8rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 1px 8px -2px rgba(176, 174, 174, 0.75);
+  -webkit-box-shadow: 0px 1px 8px -2px rgba(176, 174, 174, 0.75);
+  -moz-box-shadow: 0px 1px 8px -2px rgba(176, 174, 174, 0.75);
+}
+
+.img-post {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.berita-kolom-kiri .judul-post {
+  margin-top: 0.5rem;
+}
+
+.berita-kolom-kiri .judul-post h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.berita-kolom-kiri .tanggal-post {
+  margin-top: -0.3rem;
+}
+
+.berita-kolom-kiri .tanggal-post span {
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--abu);
+}
+
+.berita-kolom-kiri .tanggal-post .feather {
+  width: 0.7rem;
+  color: var(--abu);
+}
+
+.berita-kolom-kiri p {
+  margin-top: 0.2rem;
+  text-align: justify;
+  font-size: 0.8rem;
+  color: var(--hitam);
+}
+
+/* /* Sidebar * */
+
+/* Footer */
+#footer {
+  margin-top: 1.3rem;
+  padding: 0.5rem 0;
+  background-color: var(--utama);
+  color: var(--second);
+  min-height: 40px;
 }
 
 /* RESPONSIVE */
