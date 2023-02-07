@@ -165,23 +165,33 @@ body {
   margin-top: 0.5rem;
 }
 
-.berita-kolom-kiri .judul-post h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: justify;
+.berita-kolom-kiri .judul-post a {
+  text-decoration: none;
 }
 
-.berita-kolom-kiri .tanggal-post {
+.berita-kolom-kiri .judul-post a h3 {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--utama);
+}
+
+.berita-kolom-kiri .judul-post a h3:hover {
+  font-weight: 700;
+  /* color: var(--kuning); */
+}
+
+.tanggal-post {
   margin-top: -0.3rem;
 }
 
-.berita-kolom-kiri .tanggal-post span {
+.tanggal-post span {
   margin-left: 0.3rem;
   font-size: 0.7rem;
   color: var(--abu);
 }
 
-.berita-kolom-kiri .tanggal-post .feather {
+.tanggal-post .feather {
   width: 0.7rem;
   color: var(--abu);
 }
@@ -191,6 +201,44 @@ body {
   text-align: justify;
   font-size: 0.8rem;
   color: var(--hitam);
+}
+
+.berita-kolom-kanan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.berita-kolom-kanan .img-post {
+  width: 30%;
+  border-radius: 0.5rem;
+}
+
+.berita-item {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--abu);
+  margin-bottom: 0.5rem;
+}
+
+div.berita-item:nth-child(4) {
+  border: none;
+  margin-bottom: 0;
+}
+
+.berita-item a {
+  text-decoration: none;
+  color: var(--utama);
+  font-weight: 400;
+}
+
+.berita-item a h4:hover {
+  font-weight: 700;
+}
+
+.berita-item a h4 {
+  font-size: 0.9rem;
 }
 
 /* /* Sidebar * */
