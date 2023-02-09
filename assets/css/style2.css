@@ -49,7 +49,7 @@ body {
 
 .header-top .container .logo-extra .logo-extra-item a:hover {
   font-weight: 700;
-  background-color: #feda00;
+  background-color: var(--kuning);
   display: flex;
   height: 2rem;
   width: 5rem;
@@ -115,10 +115,6 @@ body {
 /* Devider Mainbar and siadebar */
 .devider {
   margin: 1.3rem 0;
-}
-
-.devider.dev-sidebar {
-  margin: 0;
 }
 
 .devider h3 {
@@ -243,6 +239,19 @@ div.berita-item:nth-child(4) {
 
 /* /* Sidebar * */
 
+.update-banner {
+  height: 350px;
+  overflow: hidden;
+}
+
+.update-banner img,
+.video-pesantren iframe,
+.info-donasi img,
+.info-kajian img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
 /* Footer */
 #footer {
   margin-top: 1.3rem;
@@ -312,7 +321,7 @@ div.berita-item:nth-child(4) {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1rem;
-    font-style: italic;
+    font-style: normal;
     position: relative;
     text-align: center;
   }
@@ -332,6 +341,14 @@ div.berita-item:nth-child(4) {
       rgba(3, 75, 41, 1) 50%,
       rgba(242, 252, 247, 1) 99%
     );
+  }
+
+  .mainbar {
+    margin-bottom: 1rem;
+  }
+
+  .berita-kolom-kiri {
+    margin-bottom: 1rem;
   }
 }
 
