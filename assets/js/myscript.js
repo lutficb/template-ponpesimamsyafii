@@ -1,6 +1,15 @@
-// Klik humberger menu
-const nav = document.querySelector(".nav");
+// Back to TOP js
+var btn = $("#button");
 
-document.querySelector("#hamberger-menu").onclick = () => {
-  nav.classList.toggle("active");
-};
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "300");
+});

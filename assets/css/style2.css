@@ -281,9 +281,151 @@ div.berita-item:nth-child(4) {
 /* Footer */
 #footer {
   margin-top: 1.3rem;
-  padding: 0.5rem 0;
-  background-color: var(--utama);
+  /* padding: 2.5rem 0; */
+  /* background-color: var(--utama); */
   color: var(--second);
+}
+
+.footer-top {
+  background-color: var(--utama);
+  padding: 2.5rem 0;
+}
+
+.footer-1 h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.footer-1 h4 span {
+  color: var(--kuning);
+}
+
+.footer-1 p {
+  display: inline-block;
+  margin-top: 0.5rem;
+  width: 75%;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.footer-1 .phone,
+.footer-1 .email {
+  text-align: left;
+  width: 100%;
+  margin: 0;
+}
+
+.footer-1 .phone span,
+.footer-1 .email span {
+  font-weight: 700;
+  color: var(--kuning);
+}
+
+.footer-2 {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-2 h5,
+.footer-3 h5 {
+  margin-top: 0.5rem;
+  align-self: center;
+  font-size: 1rem;
+  color: var(--kuning);
+  font-weight: 500;
+}
+
+.footer-2 ul.navbar-nav {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  list-style: none;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.footer-2 ul li {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.footer-2 ul li a:hover {
+  color: var(--kuning);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* background-color: #f2fcf7; */
+}
+
+.footer-3 .medsos-icon {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 50%;
+  margin-top: 0.5rem;
+}
+
+.footer-3 .medsos-icon a {
+  text-decoration: none;
+  color: var(--second);
+  border: 1px solid var(--second);
+  border-radius: 50%;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.footer-3 .medsos-icon a:hover {
+  color: var(--kuning);
+}
+
+.footer-bottom {
+  background-color: var(--second);
+  margin-top: 2.5rem;
+}
+
+/* Button back TOP */
+#button {
+  display: inline-block;
+  background-color: var(--kuning);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* RESPONSIVE */
@@ -378,6 +520,11 @@ div.berita-item:nth-child(4) {
 
   #yt-masta {
     margin-bottom: 1rem;
+  }
+
+  /* Button back TOP */
+  #button {
+    margin: 30px;
   }
 }
 
