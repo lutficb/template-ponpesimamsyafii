@@ -2,6 +2,8 @@
   --utama: #034b29;
   --kuning: #feda00;
   --second: #f2fcf7;
+  --abu: rgb(176, 174, 174);
+  --hitam: rgb(29, 28, 28);
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   background-color: var(--second);
   color: var(--utama);
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 /* Header Top */
@@ -46,7 +49,7 @@ body {
 
 .header-top .container .logo-extra .logo-extra-item a:hover {
   font-weight: 700;
-  background-color: #feda00;
+  background-color: var(--kuning);
   display: flex;
   height: 2rem;
   width: 5rem;
@@ -60,72 +63,396 @@ body {
 .header-bottom {
   background-color: var(--utama);
   color: var(--second);
-  min-height: 4rem;
-  display: flex;
-  position: relative;
-  align-items: center;
 }
 
-.header-bottom .container {
+.header-bottom-aktif {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 5px;
+  box-shadow: 0px 3px 8px 0px rgba(29, 28, 28, 0.38);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(29, 28, 28, 0.38);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(29, 28, 28, 0.38);
+}
+
+.header-bottom-aktif::before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: var(--second);
+  position: absolute;
+  top: -5px;
+}
+
+.header-bottom .navbar .navbar-nav .nav-item .nav-link {
+  color: var(--second);
+  font-size: 0.9rem;
+}
+
+.header-bottom .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--kuning);
+  font-weight: 500;
+}
+
+.header-bottom .navbar .navbar-nav .nav-item {
+  margin-right: 1.2rem;
+}
+
+.header-bottom .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+  color: var(--utama);
+}
+
+.header-bottom .navbar .navbar-nav .nav-item a {
+  font-size: 1rem;
+}
+
+.header-bottom .navbar .container button {
+  background-color: var(--second);
+}
+
+/* Main Content */
+#main-content {
+  margin-top: 1.3rem;
+}
+
+.mainbar,
+.sidebar {
+  padding: 0 1.5rem;
+}
+
+/* Carousel */
+#main-content .carousel {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 350px;
+}
+
+.carousel-item img {
+  height: 350px;
+}
+
+/* Devider Mainbar and siadebar */
+.devider {
+  margin: 1.3rem 0;
+}
+
+.devider h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-style: italic;
+  position: relative;
+}
+
+.devider h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  /* left: 100%; */
+  bottom: -40%;
+  height: 0.2rem;
+  width: 100%;
+  background: rgb(15, 69, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 69, 43, 1) 1%,
+    rgba(3, 75, 41, 1) 12%,
+    rgba(242, 252, 247, 1) 99%
+  );
+}
+
+/* Berita pesantren */
+.box-segment {
+  padding: 0.8rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 1px 8px -2px rgba(176, 174, 174, 0.75);
+  -webkit-box-shadow: 0px 1px 8px -2px rgba(176, 174, 174, 0.75);
+  -moz-box-shadow: 0px 1px 8px -2px rgba(176, 174, 174, 0.75);
+}
+
+.img-post {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.berita-kolom-kiri .judul-post {
+  margin-top: 0.5rem;
+}
+
+.berita-kolom-kiri .judul-post a {
+  text-decoration: none;
+}
+
+.berita-kolom-kiri .judul-post a h3 {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--utama);
+}
+
+.berita-kolom-kiri .judul-post a h3:hover {
+  font-weight: 700;
+  /* color: var(--kuning); */
+}
+
+.tanggal-post {
+  margin-top: -0.3rem;
+}
+
+.tanggal-post span {
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--abu);
+}
+
+.tanggal-post .feather {
+  width: 0.7rem;
+  color: var(--abu);
+}
+
+.berita-kolom-kiri p {
+  margin-top: 0.2rem;
+  text-align: justify;
+  font-size: 0.8rem;
+  color: var(--hitam);
+}
+
+.berita-kolom-kanan {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.header-bottom .container .nav {
-  background-color: red;
-  display: flex;
-  position: relative;
-  vertical-align: middle;
-  height: 10rem;
-  /* height: 4rem; */
-  /* position: relative; */
-  /* align-items: center; */
-  /* padding: 1rem 0; */
-  /* margin: 0; */
+.berita-kolom-kanan .img-post {
+  width: 30%;
+  border-radius: 0.5rem;
 }
 
-.header-bottom .container .nav .nav-link {
-  color: var(--second);
+.berita-item {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--abu);
+  margin-bottom: 0.5rem;
+}
+
+div.berita-item:nth-child(4) {
+  border: none;
+  margin-bottom: 0;
+}
+
+.berita-item a {
+  text-decoration: none;
+  color: var(--utama);
   font-weight: 400;
-  margin-right: 1.5rem;
 }
 
-.header-bottom .container .nav .nav-link:hover {
+.berita-item a h4:hover {
+  font-weight: 700;
+}
+
+.berita-item a h4 {
+  font-size: 0.9rem;
+}
+
+/* MASTA TV */
+#masta .row .col-lg-8 a h5 {
+  color: var(--utama);
+}
+
+#masta .row .col-lg-8 a h5:hover {
+  font-weight: 700;
+}
+
+.post-ig-masta img {
+  padding: 0.1rem;
+  width: 27.5%;
+  border-radius: 0.7rem;
+}
+
+/* Sidebar */
+.update-banner {
+  height: 350px;
+  overflow: hidden;
+}
+
+.update-banner img,
+.video-pesantren iframe,
+.video-masta iframe,
+.info-donasi img,
+.info-kajian img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+/* Footer */
+#footer {
+  margin-top: 1.3rem;
+  color: var(--second);
+}
+
+.footer-top {
+  background-color: var(--utama);
+  padding: 2.5rem 0;
+}
+
+.footer-1 h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.footer-1 h4 span {
   color: var(--kuning);
-  font-weight: 600;
 }
 
-.header-bottom .container .nav .nav-link::after {
-  content: "";
-  display: block;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--kuning);
-  transform: scaleX(0);
-  transition: 0.2s linear;
+.footer-1 p {
+  display: inline-block;
+  margin-top: 0.5rem;
+  width: 75%;
+  text-align: justify;
+  font-size: 0.8rem;
 }
 
-.header-bottom .container .nav .nav-link:hover::after {
-  transform: scaleX(0.5);
+.footer-1 .phone,
+.footer-1 .email {
+  text-align: left;
+  width: 100%;
+  margin: 0;
 }
 
-.header-bottom .container .nav ul {
-  list-style: none;
+.footer-1 .phone span,
+.footer-1 .email span {
+  font-weight: 700;
+  color: var(--kuning);
+}
+
+.footer-2 {
   display: flex;
-  align-content: center;
+  height: 100%;
   justify-content: center;
-  position: absolute;
-  background-color: #feda00;
-}
-
-.header-bottom .container .nav ul li ul {
   flex-direction: column;
-  background-color: red;
-  display: none;
 }
 
-#hamberger-menu {
-  /* display: none; */
-  background-color: #feda00;
+.footer-2 h5,
+.footer-3 h5 {
+  margin-top: 0.5rem;
+  align-self: center;
+  font-size: 1.1rem;
+  color: var(--kuning);
+  font-weight: 500;
+}
+
+.footer-2 ul.navbar-nav {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  list-style: none;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.footer-2 ul li {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-2 ul li a:hover {
+  color: var(--kuning);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* background-color: #f2fcf7; */
+}
+
+.footer-3 .medsos-icon {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.footer-3 .medsos-icon a {
+  text-decoration: none;
+  color: var(--second);
+  border: 1px solid var(--second);
+  border-radius: 50%;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.footer-3 .medsos-icon a:hover {
+  color: var(--kuning);
+}
+
+.footer-bottom {
+  background-color: var(--second);
+  color: var(--utama);
+  padding-top: 1rem;
+  justify-content: space-around;
+}
+
+.footer-bottom .copyright,
+.footer-bottom .original-design {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer-bottom .copyright p span {
+  font-weight: 700;
+}
+
+.footer-bottom .original-design p {
+  text-align: end;
+}
+
+.footer-bottom .original-design p a {
+  color: var(--utama);
+  font-weight: 700;
+}
+
+/* Button back TOP */
+#button {
+  display: inline-block;
+  background-color: var(--kuning);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* RESPONSIVE */
@@ -184,49 +511,90 @@ body {
     margin-left: 0.3rem;
   }
 
-  .header-bottom .container .nav {
-    justify-content: space-between;
+  .devider h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: normal;
+    position: relative;
+    text-align: center;
   }
 
-  .header-bottom .container .nav .nav-link {
-    font-size: 85%;
-    margin-right: 0.1rem;
+  .devider h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    /* left: 100%; */
+    bottom: -40%;
+    height: 0.2rem;
+    width: 100%;
+    background: rgb(242, 252, 247);
+    background: linear-gradient(
+      90deg,
+      rgba(242, 252, 247, 1) 1%,
+      rgba(3, 75, 41, 1) 50%,
+      rgba(242, 252, 247, 1) 99%
+    );
+  }
+
+  .mainbar {
+    margin-bottom: 1rem;
+  }
+
+  .berita-kolom-kiri {
+    margin-bottom: 1rem;
+  }
+
+  #yt-masta {
+    margin-bottom: 1rem;
+  }
+
+  /* Button back TOP */
+  #button {
+    margin: 30px;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--second);
+  }
+
+  .header-bottom-aktif {
+    position: relative;
+  }
+
+  .header-bottom-aktif::before {
+    display: none;
+  }
+
+  .footer-1 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-1 h4,
+  .footer-1 p,
+  .footer-1 .phone,
+  .footer-1 .email {
+    text-align: center;
+  }
+
+  .footer-1 p {
+    width: 100%;
+  }
+
+  .footer-2 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom .copyright,
+  .footer-bottom .original-design p {
+    text-align: center;
   }
 }
 
 /* Phone */
 @media (max-width: 576px) {
-  .header-bottom .container .nav {
-    position: absolute;
-    display: block;
-    top: 100%;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--utama);
-    transition: 0.3s linear;
-  }
-
-  .header-bottom .container .nav.active {
-    left: 0;
-  }
-
-  #hamberger-menu {
-    display: block;
-  }
-
-  #hamberger-menu {
-    color: var(--second);
-  }
-
-  #hamberger-menu:hover {
-    color: var(--kuning);
-  }
-
-  .header-bottom .container .nav .nav-link {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    /* color: var(--utama); */
-  }
 }
