@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ponpes Imam Syafi'i Tulungagung</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootsrap 5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Back to top button -->
+    <a id="button"></a>
+
+    <!-- Header -->
+    <header>
+      <!-- Header Top -->
+      <div class="header-top">
+        <div class="container justify-content-between">
+          <div class="logo">
+            <a href="http://127.0.0.1:5500/index.html">
+              <img src="assets/img/logo-ponpes.png" alt="" />
+            </a>
+          </div>
+          <div class="logo-extra d-flex">
+            <div class="logo-extra-item">
+              <i data-feather="clock"></i><span>Ahad, 05 Februari 2023</span>
+            </div>
+            <div class="logo-extra-item">
+              <a href="#"><i data-feather="user"></i><span>Login</span> </a>
+            </div>
+            <div class="logo-extra-item pencarian">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Pencarian"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success btn-sm" type="submit">
+                  Cari
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end Header Top -->
+
+      <!-- Header bottom -->
+      <div id="header-bottom" class="header-bottom">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pesantren
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Profil Pesantren</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Visi dan Misi</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Struktur Organisasi</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Kurikulum</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Jenjang Pendidikan
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">MSWTQ</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">MSW</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">MSU/IDAD</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Pengumuman</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Berita Pesantren</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Artikel dan Kajian Ilmiah
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Akhlak dan Adab</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Al Quran dan Tafsir</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Aqidah dan Manhaj</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Fiqih</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Hadits</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Keluarga</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Siroh dan Tarikh</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Tazkiyatun Nufus</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">PSB</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Kontak</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- end Header bottom -->
+    </header>
+
+    <!-- Main -->
+    <main id="main-content">
+      <div class="container">
+        <div class="row">
+          <!-- Mainbar -->
+          <div class="col-lg-8 mainbar">
+            <!-- Post -->
+            <div class="box-segment post-detail">
+              <div class="header-post-detail">
+                <h3 class="judul-post-detail">Lorem ipsum dolor sit</h3>
+                <div class="subtitle-post-detail">
+                  <div class="tanggal-post">
+                    <i data-feather="calendar"></i
+                    ><span>Ahad, 05 Februari 2023</span>
+                  </div>
+                  <div class="tanggal-post">
+                    <a href=""
+                      ><i data-feather="folder"></i
+                      ><span>Akhlak dan Adab</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="main-post-detail">
+                <img
+                  src="assets/img/slide2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <article class="main-post-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati consequatur officia asperiores doloremque facilis
+                  fugit cupiditate illo itaque, saepe autem, ullam voluptas
+                  facere exercitationem? Doloribus hic expedita deleniti earum
+                  incidunt? Aperiam perferendis labore, quisquam est qui
+                  molestiae officia excepturi aut alias error libero quidem
+                  perspiciatis quasi expedita porro accusamus quas quae amet
+                  cumque fugiat vitae hic odit quia dolor! Hic inventore nihil
+                  ut minima magni eveniet modi enim non cumque, in deserunt at
+                  temporibus placeat. Provident a quos veniam reprehenderit
+                  voluptatibus ex, consectetur ut at saepe omnis assumenda
+                  accusantium harum voluptatem? Ullam iste, velit quasi
+                  provident nulla cum quidem quaerat illo. Nemo, possimus
+                  aliquam dolore a nulla, expedita in perspiciatis eum ipsa
+                  maiores minima mollitia dignissimos. Provident error expedita
+                  numquam sint earum eaque architecto aliquam mollitia vel hic
+                  neque optio autem dolor doloribus delectus unde, fugit aperiam
+                  sequi velit accusamus aspernatur suscipit nemo. Provident
+                  maiores laboriosam maxime vel repellendus soluta fugit earum
+                  voluptatum fuga, facere nemo praesentium distinctio aspernatur
+                  mollitia necessitatibus laborum ducimus tempore magnam iusto a
+                  dignissimos quo repudiandae? Voluptates iure molestias quasi
+                  sequi rerum incidunt mollitia cum, ea porro itaque sint.
+                  Veniam, at laboriosam quidem laborum maxime quos velit
+                  corrupti repudiandae beatae optio ullam placeat ad tenetur
+                  eaque neque, perspiciatis ducimus architecto est? Soluta
+                  obcaecati aut doloribus dolores explicabo blanditiis
+                  architecto perspiciatis, iusto, culpa corporis distinctio
+                  animi mollitia voluptas sit illo. Possimus aperiam amet
+                  temporibus suscipit inventore quaerat ducimus harum quidem id!
+                  Dicta nulla distinctio, quod assumenda sequi autem omnis iure
+                  repellat. Praesentium blanditiis sequi hic, ipsa commodi
+                  suscipit? Iure dicta perferendis sequi natus! Nemo suscipit
+                  aspernatur consequatur ab laboriosam veritatis a adipisci
+                  modi, perspiciatis nobis quaerat temporibus unde et accusamus
+                  id explicabo esse consequuntur quidem. Voluptatum ut adipisci
+                  atque error, a voluptas, alias nobis reprehenderit temporibus
+                  earum vitae at quia inventore odio provident obcaecati
+                  mollitia laudantium officia?
+                </article>
+              </div>
+            </div>
+            <!-- end Post -->
+          </div>
+          <!-- end Mainbar -->
+
+          <!-- Sidebar -->
+          <div class="col-lg-4 sidebar">
+            <div class="update-banner">
+              <a href="assets/img/poster-donasi.png" data-toggle="lightbox">
+                <img
+                  src="assets/img/poster-donasi.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+
+            <div class="devider dev-sidebar">
+              <h3>Video Profil Pesantren</h3>
+            </div>
+
+            <div class="video-pesantren ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/fm19sgHF5u8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="devider dev-sidebar">
+              <h3>Info Kajian Rutin</h3>
+            </div>
+
+            <div class="info-kajian">
+              <img src="assets/img/kajian.png" alt="" />
+            </div>
+
+            <div class="devider dev-sidebar">
+              <h3>Info Donasi</h3>
+            </div>
+
+            <div class="info-donasi">
+              <a href="assets/img/banner-donasi.png" data-toggle="lightbox">
+                <img src="assets/img/banner-donasi.png" alt="" />
+              </a>
+            </div>
+            <!-- end Info Donasi -->
+          </div>
+          <!-- end Sidebar -->
+        </div>
+      </div>
+    </main>
+    <!-- end Main -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="row footer-top">
+        <div class="col-lg-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 footer-1">
+                <h4>Ponpes <span>Imam Syafi'i</span></h4>
+                <p>
+                  Jalan Jayeng Kusuma Gg. I RT/RW 003/005 Dusun Donorejo, Desa
+                  Tapan, Kec. Kedungwaru, Kab. Tulungagung - Jawa Timur
+                </p>
+                <p class="phone"><span>Phone :</span> 081214626278</p>
+                <p class="email">
+                  <span>Email :</span> pesantren.imamsyafiie@gmail.com
+                </p>
+              </div>
+              <div class="col-lg-4 footer-2">
+                <h5>Link Lainnya</h5>
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                  <li class="divider-vertical"></li>
+                  <li class="nav-item">
+                    <a
+                      href="https://pkbmimamsyafii-tulungagung.sch.id/"
+                      class="nav-link"
+                      >PSB TA. 2023/2024</a
+                    >
+                  </li>
+                  <li class="divider-vertical"></li>
+                  <li class="nav-item">
+                    <a
+                      href="https://psb.ponpesimamsyafii.or.id/"
+                      class="nav-link"
+                      >PKBM Imam Syafi'i</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 footer-3">
+                <h5>Follow us :</h5>
+                <div class="medsos-icon">
+                  <a href="https://www.youtube.com/@mastatvofficial6704"
+                    ><i data-feather="youtube"></i
+                  ></a>
+                  <a href="https://www.facebook.com/pesantren.ista"
+                    ><i data-feather="facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/imamsyafiitulungagung/"
+                    ><i data-feather="instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom">
+        <div class="col-lg-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="copyright">
+                  <p>
+                    <span>&copy; 2023</span> Ponpes Imam Syafi'i Tulungagung
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="original-design">
+                  <p>Original Design by <a href="">RosoDev</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
+
+    <!-- JQuery 3.x -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap 5.3 js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+    ></script>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Script -->
+    <script src="assets/js/myscript.js"></script>
+  </body>
+</html>

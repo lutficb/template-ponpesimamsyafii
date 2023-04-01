@@ -418,6 +418,51 @@ div.berita-item:nth-child(4) {
   font-weight: 700;
 }
 
+/* Post Detail */
+.post-detail {
+  padding: 1.2rem;
+}
+
+.header-post-detail::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3px;
+  height: 1px;
+  width: 100%;
+  background-color: #feda00;
+  border-bottom: 1px solid rgb(213, 211, 211);
+}
+
+.judul-post-detail {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: -0.05rem;
+}
+
+.subtitle-post-detail {
+  display: flex;
+  gap: 1rem;
+}
+
+.subtitle-post-detail .tanggal-post a:hover {
+  color: #034b29;
+}
+
+.main-post-detail {
+  margin-top: 0.7rem;
+}
+
+.main-post-detail img {
+  border-radius: 0.7rem;
+}
+
+.main-post-text {
+  margin-top: 1rem;
+  text-align: justify;
+}
+/* end Post Detail */
+
 /* Button back TOP */
 #button {
   display: inline-block;
