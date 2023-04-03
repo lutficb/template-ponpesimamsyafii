@@ -460,6 +460,38 @@ div.berita-item:nth-child(4) {
 .main-post-text {
   margin-top: 1rem;
   text-align: justify;
+  font-size: 0.9rem;
+  color: black;
+}
+
+/* Next Prev Segment */
+.next-prev {
+  margin-top: 1.8rem;
+}
+
+.button-next-prev {
+  text-decoration: none;
+}
+
+.button-next-prev div i {
+  font-size: 3.3rem;
+  color: var(--utama);
+}
+
+.sebelum-sesudah {
+  color: var(--abu);
+  font-size: 0.7rem;
+}
+
+.judul-post-next-prev {
+  color: var(--utama);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Similar post */
+.similar-post {
+  margin-top: 1.8rem;
 }
 /* end Post Detail */
 
